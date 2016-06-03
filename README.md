@@ -14,7 +14,8 @@ cp env.example .env
 vi slackin.sh
 
 # add init.d script for slackin
-sudo -i && cd /vagrant
+sudo -i
+cd /vagrant
 cp slackin.sh /etc/init.d/slackin
 chmod a+x /etc/init.d/slackin
 update-rc.d slackin defaults
